@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>logged in</title>
+    <style>
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+        }
+        .btn{
+            background-color: rgb(229, 247, 221);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="navbar">
+        <form action="http://127.0.0.1:3000/api/v1/users/logout" method="GET">
+            <input class="btn" type="submit" value="logout">
+        </form><br>
+        <form action="http://127.0.0.1:3000/api/v1/users/delete" method="GET">
+            <input class="btn" type="submit" value="delete account">
+        </form><br>
+        <form action="http://127.0.0.1:3000/api/v1/users/test" method="GET">
+            <input class="btn" type="submit" value="test">
+        </form><br>
+        <form action="http://127.0.0.1:3000/api/v1/users/student" method="GET">
+            <input class="btn" type="submit" value=" Dashboard ">
+        </form><br>
+        <form action="http://127.0.0.1:3000/api/v1/users/admin" method="GET">
+            <input class="btn" type="submit" value="Admin">
+        </form>
+    </div>
+    <h2>Welcome you have logged in successfully</h2>
+    </div>
+</body>
+
+</html>
